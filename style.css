@@ -1,0 +1,18 @@
+/* Add any custom styles if needed */
+/* Tailwind will handle most of the layout and design for you */
+
+/* Weather display specific styling */
+#weather-display {
+    font-size: 1.5rem;
+}
+
+.card {
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    max-width: 100%;
+}

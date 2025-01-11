@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast App</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-100">
+    <div class="container mx-auto p-5">
+        <h1 class="text-3xl font-bold text-center mb-5">Weather Forecast App</h1>
+
+        <!-- Search section -->
+        <div class="flex justify-center">
+            <input type="text" id="city" placeholder="Enter city" class="border rounded p-2">
+            <button onclick="getCityWeather()" class="bg-blue-500 text-white p-2 ml-2">Search</button>
+            <button onclick="getCurrentLocationWeather()" class="bg-green-500 text-white p-2 ml-2">Use Current
+                Location</button>
+        </div>
+
+        <!-- Recent searches -->
+        <div class="flex justify-center mt-5">
+            <select id="recent-searches" class="border p-2">
+                <option value="">Select Recent Search</option>
+            </select>
+        </div>
+
+        <!-- Weather display -->
+        <div id="weather-display" class="mt-10 text-center"></div>
+
+        <!-- Extended forecast -->
+        <div id="forecast-display" class="grid grid-cols-1 md:grid-cols-5 gap-4 mt-10"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
